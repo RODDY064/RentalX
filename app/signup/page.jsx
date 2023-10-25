@@ -77,7 +77,7 @@ function Signup() {
               <h3 className="my-2 text-black/60 text-xs">with</h3>
                <div className="w-full px-4 flex justify-between mt-2">
                <div className="w-[48%] h-12 p-2 rounded-lg  flex  gap-2 items-center justify-center cursor-pointer bg-black text-white font-ubuntu_m"  onClick={(e)=>{e.preventDefault(), signIn("google",{callbackUrl:'/'})}}>
-                    <Image src='/assets/icons/google.svg' width={22} height={22} alt='google'/>
+                    <Image src='/assets/icons/google.svg' width={22} height={22} alt='google'  />
                   Google
                 </div>
                 <div className="w-[48%] h-12 p-2 rounded-lg  flex  gap-2 items-center justify-center cursor-pointer bg-black text-white font-ubuntu_m"  onClick={(e)=>{e.preventDefault(), signIn("github",{callbackUrl:'/'})}}>
