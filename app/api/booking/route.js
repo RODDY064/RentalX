@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { PrismaClient } from "@prisma/client";
-import { carData } from "@libs/database";
+
 
 const prisma = new PrismaClient()
 
