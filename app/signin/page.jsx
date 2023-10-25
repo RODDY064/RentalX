@@ -66,7 +66,7 @@ export default function page() {
                     <Image src='/assets/icons/google.svg' width={22} height={22} alt='google'/>
                   Google
                 </div>
-                <div className="w-[48%] h-12 p-2 rounded-lg  flex  gap-2 items-center justify-center cursor-pointer bg-black text-white font-ubuntu_m" onClick={()=>{e.preventDefault(),signIn("github",{callbackUrl:'/'})}}>
+                <div className="w-[48%] h-12 p-2 rounded-lg  flex  gap-2 items-center justify-center cursor-pointer bg-black text-white font-ubuntu_m" onClick={async(e)=>{e.preventDefault(),  await signIn("github",{callbackUrl:'/'})}}>
                     <Image src='/assets/icons/github.svg' width={30} height={30} alt='github'/>
                   Github
                 </div>

@@ -76,11 +76,11 @@ function Signup() {
               <h1 className="font-ubuntu_m font-medium text-3xl">Create an account</h1>
               <h3 className="my-2 text-black/60 text-xs">with</h3>
                <div className="w-full px-4 flex justify-between mt-2">
-               <div className="w-[48%] h-12 p-2 rounded-lg  flex  gap-2 items-center justify-center cursor-pointer bg-black text-white font-ubuntu_m">
+               <div className="w-[48%] h-12 p-2 rounded-lg  flex  gap-2 items-center justify-center cursor-pointer bg-black text-white font-ubuntu_m"  onClick={(e)=>{e.preventDefault(), signIn("google",{callbackUrl:'/'})}}>
                     <Image src='/assets/icons/google.svg' width={22} height={22} alt='google'/>
                   Google
                 </div>
-                <div className="w-[48%] h-12 p-2 rounded-lg  flex  gap-2 items-center justify-center cursor-pointer bg-black text-white font-ubuntu_m">
+                <div className="w-[48%] h-12 p-2 rounded-lg  flex  gap-2 items-center justify-center cursor-pointer bg-black text-white font-ubuntu_m"  onClick={(e)=>{e.preventDefault(), signIn("github",{callbackUrl:'/'})}}>
                     <Image src='/assets/icons/github.svg' width={30} height={30} alt='github'/>
                   Github
                 </div>
