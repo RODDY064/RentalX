@@ -24,7 +24,7 @@ At RentalX, we value your time. The prominent search bar on the home page allows
 We want you to get the best value for your money. Our home page prominently highlights top deals, discounts, and special promotions to make your car rental experience even more affordable.
 
 ![Quick Search and ![pro_2](https://github.com/RODDY064/RentalX/assets/124875320/8aa6b817-4555-4b9e-abca-c342bbb50141)
-Booking](url-to-your-image)
+
 
 
 ## Feature 4: User-Focused Navigation
