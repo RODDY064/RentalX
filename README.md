@@ -1,5 +1,3 @@
-
-https://github.com/RODDY064/RentalX/assets/124875320/fb893c5f-6cb5-4fe5-964f-9a94874143e6
 # RentalX - Car Rental Website | Your Destination for Affordable Car Hire
 Welcome to RentalX, your premier destination for hassle-free car rentals. Our platform offers a seamless experience for users to find and book their ideal vehicle, whether it's for business, leisure, or special occasions. Explore our wide range of cars, enjoy competitive rates, and experience every mile with a smile. Get started and embark on your journey today!
 
@@ -11,6 +9,8 @@ The home page is the first impression your users will have of your car rental we
  ### 1: 🌟  Stunning Car Carousel
  Our home page welcomes users with a captivating carousel that showcases a variety of cars available for rental. 
  From sleek luxury cars to practical family vehicles, it's a visual delight.
+
+ 
 ![pro_1](https://github.com/RODDY064/RentalX/assets/124875320/22ad7b29-f33b-4f04-9bcf-f9bec560515b)
 
 ## Feature 2: Quick Search and Booking
@@ -33,6 +33,7 @@ Booking](url-to-your-image)
 Our user-centric approach ensures easy navigation on the home page. Users can access their profiles, view booking history, and check payment records right from the main menu.
 
 ###   Responsive 
+
 https://github.com/RODDY064/RentalX/assets/124875320/42b1cc89-31da-4173-867d-a5ca6c85fe1b
 
 
