@@ -58,7 +58,7 @@ The Rent Page is a critical component of our platform, allowing users to browse 
 
 ## Booking Page 
 
-.The Booking Page is a crucial part of our platform, allowing users to complete their car rental reservations seamlessly. It ensures a straightforward process for selecting rental dates, reviewing booking details, and confirming reservations.
+The Booking Page is a crucial part of our platform, allowing users to complete their car rental reservations seamlessly. It ensures a straightforward process for selecting rental dates, reviewing booking details, and confirming reservations.
 
 ### 1. Date Selection
 
@@ -100,3 +100,51 @@ The Rent Page is a critical component of our platform, allowing users to browse 
 - Booking Receipt: A booking receipt is generated and sent to the user's email address.
 
   ![review](https://github.com/RODDY064/RentalX/assets/124875320/b2ffecd5-7dd0-4fab-be79-09b37c266565)
+
+
+
+
+## User Page 
+
+The User Page is designed to provide users with a personalized and convenient space where they can access their payment history, booking history, and update their address information.
+
+
+### 1. User Profile &&  Address Information
+
+- User Information: Users can view and update their profile information, including name, email, and contact details.
+- Change Password: Users can change their login password for security.
+-  Manage Addresses: Users can add, edit, or delete address information.
+- Select Pickup Location: During the booking process, users can choose from their saved addresses for pickup.
+
+
+  ![info](https://github.com/RODDY064/RentalX/assets/124875320/90359e5d-feee-49ca-9d86-7608013b09d9)
+
+### 2. Payment History
+
+- Payment Records: Users can access a record of all their past payments, including details of each transaction.
+- Download Receipts: Users can download payment receipts for their records.
+
+### 3. Booking History
+
+- Booking Records: Users can review their entire booking history, including the details of each rental.
+- View Past and Upcoming Bookings: Past and upcoming bookings are clearly distinguished for user convenience.
+
+  ![history](https://github.com/RODDY064/RentalX/assets/124875320/7918d8dc-c5fd-455e-a24b-2c517c570bfe)
+
+
+
+## About Us Page
+![about us](https://github.com/RODDY064/RentalX/assets/124875320/ddbf906b-757a-4d5d-86e8-48f1a3b194b1)
+
+
+## Contact Page 
+![contact us](https://github.com/RODDY064/RentalX/assets/124875320/12a8b1fd-16d5-4cff-a296-c8a0bc1b1fbc)
+![faqs](https://github.com/RODDY064/RentalX/assets/124875320/ede82b71-bc02-4520-aae2-7ffe0748b7a4)
+
+
+
+
+
+
+
+
