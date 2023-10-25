@@ -1,0 +1,145 @@
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+ 
+}
+
+generator client {
+  provider        = "prisma-client-js"
+  
+
+}
+
+model Account {
+  id                 String  @id @default(auto()) @map("_id") @db.ObjectId
+  userId             String  @db.ObjectId
+  type               String
+  provider           String
+  providerAccountId  String
+  refresh_token      String?  @db.String
+  access_token       String?  @db.String
+  expires_at         Int?
+  token_type         String?
+  scope              String?
+  id_token           String?   @db.String
+  session_state      String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+   id          String  @id @default(auto()) @map("_id") @db.ObjectId
+  sessionToken String   @unique
+  userId       String   @db.ObjectId
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id            String  @id @default(auto()) @map("_id") @db.ObjectId
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime? @map(name: "email_verified")
+  password      String?
+  image         String?
+  createdAt     DateTime  @default(now()) @map(name: "created_at")
+  updatedAt     DateTime  @default(now()) @map(name: "updated_at")
+  accounts      Account[]
+  sessions      Session[]  
+  rentals       Rental[] 
+  payments      Payment[]
+  addresses     Address[] 
+  idCards       IdCard[] 
+  drivingLicenses  DrivingLicense[]
+}
+
+// databse car model 
+model Car {
+  id           String       @id @default(auto()) @map("_id") @db.ObjectId 
+  brand        String
+  model        String
+  cardImage    String  
+  bookingImage String?  
+  message      String
+  available    Boolean   @default(true)
+  price        Float
+  year         Int
+  images       String[]  
+  mileage      String?
+  fuelType     String
+  transmission String
+  seat         Int
+  rentals      Rental[] 
+ 
+}
+
+
+// rental model
+
+model Rental {
+  id         String       @id @default(auto()) @map("_id") @db.ObjectId 
+  startDate  DateTime
+  endDate    DateTime
+  totalPrice Float
+  createdAt     DateTime  @default(now()) @map(name: "created_at")
+  user       User     @relation(fields: [userId], references: [id])
+  userId     String   @db.ObjectId   
+  car        Car      @relation(fields: [carId], references: [id])
+  carId      String   @db.ObjectId   
+  payments  Payment[]
+}
+
+// payment model
+model Payment {
+  id           String       @id @default(auto()) @map("_id") @db.ObjectId 
+  amount       Float
+  createdAt     DateTime  @default(now()) @map(name: "created_at")
+  rental       Rental   @relation(fields: [rentalId], references: [id])
+  rentalId     String    @db.ObjectId
+  user         User     @relation(fields: [userId], references: [id])
+  userId       String    @db.ObjectId
+  method       String
+
+}
+
+// address model
+model Address {
+  id           String       @id @default(auto()) @map("_id") @db.ObjectId 
+  name         String
+  birthDate    DateTime
+  age          String
+  street       String
+  city         String
+  postalCode   String
+  user         User         @relation(fields: [userId], references: [id])
+  userId        String      @db.ObjectId
+}
+
+
+// ID model
+model IdCard {
+   id           String       @id @default(auto()) @map("_id") @db.ObjectId 
+  method       String
+  paypalEmail  String?
+  paypalPassword String?
+  cardNumber    String?
+  cardHolder    String?
+  expirationDate DateTime?
+  cvv            String?
+  createdAt     DateTime      @default(now()) @map(name: "created_at")
+  user          User          @relation(fields: [userId], references: [id])
+  userId        String        @db.ObjectId
+}
+
+// licenses model
+model DrivingLicense {
+  id            String       @id @default(auto()) @map("_id") @db.ObjectId 
+  licenseNumber  String
+  expirationDate  DateTime
+  user           User     @relation(fields: [userId], references: [id])
+  userId         String       @db.ObjectId
+  createdAt     DateTime  @default(now()) @map(name: "created_at")
+
+}
