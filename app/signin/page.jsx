@@ -55,10 +55,10 @@ export default function page() {
        <div className="w-full pb-5 flex flex-col items-center ">
         <div className="mt-10 w-[70%] bg-home flex  shadow-lg border border-teal-200 min-h-[500px] max-sm:min-h-[500px] max-sm:w-[90%] rounded-lg overflow-hidden">
            <div className="w-[50%] relative  min-h-[500px] flex items-center justify-center max-sm:hidden overflow-hidden">
-             <Image src="/assets/images/page.jpg" fill={true} priority={true}  alt='page' sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+             <Image src="/assets/images/page.jpg" fill={true}   alt='page' sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
            </div>
            <div className="w-[50%] min-h-[500px] max-sm:w-full">
-             <form className="w-full h-full p-10 flex flex-col items-center max-sm:px-4" onSubmit={loginUser}>
+             <form className="w-full h-full p-10 flex flex-col items-center max-sm:px-4" onSubmit={(e)=>loginUser(e)}>
               <h1 className="font-ubuntu_m font-medium text-3xl">Sign in</h1>
               <h3 className="my-2 text-black/60 text-xs">with</h3>
                <div className="w-full px-4 flex justify-between mt-2">

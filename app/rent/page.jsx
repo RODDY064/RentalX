@@ -175,7 +175,7 @@ export default  function Rent() {
 
          }
          </div> 
-        {!cardFilter.image ?
+        {!cardFilter ?
          (<>
          <div className="w-[75%] max-sm:w-[95%] min-h-[700px] rounded-lg border flex items-center justify-center gap-2">
          <motion.div
