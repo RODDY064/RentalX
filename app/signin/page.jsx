@@ -79,11 +79,11 @@ export default function page() {
                <div className="px-4 w-full ">
                  <h1>Username</h1>
                  <input className="w-full info_input border-teal-200 invalid:border " type='email'
-                 placeholder='Enter your username' required value={user.email}  onChange={(e)=>setUser({...user,email:e.target.value})}></input>
+                 placeholder='Enter your username'  value={user.email}  onChange={(e)=>setUser({...user,email:e.target.value})}></input>
 
                  <h1 className="mt-2">Password</h1>
                   <input className="w-full info_input  border-teal-200 invalid:border " type='password'
-                  placeholder='Enter your password' value={user.password} required onChange={(e)=>setUser({...user,password:e.target.value})}></input>
+                  placeholder='Enter your password' value={user.password}  onChange={(e)=>setUser({...user,password:e.target.value})}></input>
                   <button className="my-4 w-full h-12 rounded-lg bg-black flex items-center justify-center cursor-pointer"
                   type='submit' >
                     <span className="font-ubuntu_m text-xl font-medium title">Submit</span>

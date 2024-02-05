@@ -102,7 +102,7 @@ h1,h2,h3,h4,h5,p{
   @apply bg-glass backdrop-blur-xs;
 }
 .hero_card {
-  @apply absolute flex right-3  mt-2  bottom-[-23%] w-[65%]  xl:h-[600px] h-[550px] max-sm:w-[100%] max-sm:right-0 max-sm:p-1 max-sm:h-[360px] max-sm:bottom-0
+  @apply absolute flex right-3  mt-2 xl:bottom-0 bottom-[-23%] w-[65%]  xl:h-[600px] h-[550px] max-sm:w-[100%] max-sm:right-0 max-sm:p-1 max-sm:h-[360px] max-sm:bottom-0
   max-sm:relative;
 }
 .hero_card_sm{
@@ -110,7 +110,7 @@ h1,h2,h3,h4,h5,p{
  max-sm:w-[70%] flex justify-center items-center;
 }
 .hero_card_lg{
-  @apply absolute left-[-10rem]  mt-[10rem] w-[90%] h-[75%] shadow-lg  bg-white_glass  rounded-xl border-2 border-gray-200  max-sm:w-[98%] max-sm:left-0 max-sm:px-2  flex justify-center items-center ;
+  @apply absolute left-[-10rem]  mt-[10rem] w-[90%] xl:w-[85%] xl:h-[95%] h-[75%] shadow-lg  bg-white_glass  rounded-xl border-2 border-gray-200  max-sm:w-[98%] max-sm:left-0 max-sm:px-2  flex justify-center items-center ;
  }
 .hero {
   @apply  bg-cover bg-main bg-center max-sm:bg-mobile;

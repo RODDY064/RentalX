@@ -31,15 +31,13 @@ export default function Home() {
       <AnimatePresence>
         <section
           className="w-full  h-screen max-sm:h-auto  max-sm:pb-[6rem] "
-          id="hero"
-        >
+          id="hero">
           <div className="z-1" id="heading">
             <motion.h1
               variants={title_animate}
               initial="hidden"
               animate="visible"
-              className=" ml-10 mt-10 text-[3.5rem] xl:text-[5rem] xl:leading-none  leading-[3.5rem] font-ubuntu_m font-bold max-sm:mt-0 max-sn:ml-0 max-sm:mx-9 max-sm:leading-[3.6rem]"
-            >
+              className=" ml-10 mt-10 text-[3.5rem] xl:text-[5rem] xl:leading-none  leading-[3.5rem] font-ubuntu_m font-bold max-sm:mt-0 max-sn:ml-0 max-sm:mx-9 max-sm:leading-[3.6rem]">
               looking to save more <br />
               on your <span className="title">rental </span>car ?
             </motion.h1>
@@ -54,13 +52,11 @@ export default function Home() {
             initial="hidden"
             animate="visible"
             className="hero_card"
-            id="card"
-          >
+            id="card">
             <motion.div
               variants={boxes}
               className="hero_card_sm"
-              id="hero_card_sm"
-            >
+              id="hero_card_sm">
               <div className="absolute w-[95%] h-[98%] p-5">
                 <Image
                   src="/assets/images/royce.png"
@@ -87,8 +83,7 @@ export default function Home() {
         </section>
         <div
           className="search_input max-sm:gap-2 max-sm:relative lg:translate-x-10 lg:translate-y-6"
-          id="search"
-        >
+          id="search"  >
           <input
             type="text"
             value={searchPrompt.search}
@@ -122,8 +117,7 @@ export default function Home() {
           </div>
           <div
             className="ml-4 w-[13%] max-sm:w-[17%] h-[95%] shadow-lg rounded-lg bg-black border border-gray-200 backdrop-blur-xs flex items-center justify-center cursor-pointer"
-            onClick={handleQuery}
-          >
+            onClick={handleQuery}>
             <h1 className="text-lg  bg-gradient-to-r from-fuchsia-400 to-lime-400 bg-clip-text text-transparent font-medium max-sm:text-sm">
               Search
             </h1>
